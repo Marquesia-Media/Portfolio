@@ -1,0 +1,375 @@
+/*ERROR missing the middle section and footer Assignment 9 CSS requirements to write the code to match your site design */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*---------------------- Start editing ---------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color: white;
+}
+
+@font-face{
+font-family:'Mona Sans';
+src: url ('Fonts/MonaSans/VariableFont_wdth,wght.ttf');
+}
+
+@font-face{
+font-family:'Airframe reg';
+src: url ('Fonts/Airframe/AirframeDemoRegular.ttf');
+}
+
+@font-face{
+font-family:'Airframe BoldI';
+src: url ('Fonts/Airframe/AirframeDemoBoldItalic.ttf');
+}
+/* header start*/
+header{
+	width: 88%;
+	height: 200px;
+	background-color: black;
+	color:white;
+	border-bottom: 10px soild white;
+	padding:2% 6%;
+	margin: 0px 0px 0px 0px;
+}
+
+#topHeader{
+	width: 105%;
+	height: 80px;
+	background-color: blue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+h2{
+	line-height: 80px;
+}
+
+nav{
+	padding-top: 13px;
+}
+
+#bottomHeader{
+	width: 105%;
+	height: 120px;
+	background-color: yellow;
+	overflow: auto;
+	clear: both;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.floatRight{
+	float: right;
+}
+
+
+#homepagecontent{
+	width:100 ;
+	background-color: transparent;
+}
+
+/* header ends 
+
+/* footer start*/
+
+footer{
+	width: 88%;
+	height: 100px;
+	background-color: black;
+	padding:.75% 6% 4.5%;
+	margin: 0px 0px 0px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#backToTopButton{
+	background-color: yellow;
+	background-size: 50px
+	align-items: center; 
+	margin-top:3%
+}
+
+.social{
+	width: 300px;
+	overflow: auto;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.social p{
+	color: white;
+	line-height: 75px;
+}
+#socialIcons{
+	background-color: yellow;
+	margin-top:1%
+}
+
+#footerLogo{
+	background-color: blue;
+	margin-top: 2%
+}
+
+/* footer ends
+
+
+/* header emlemts starts*/
+h1 {
+	font-family: "Airframe BoldI", verdana, helvetica, san-serif;
+	color: brown;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:72px;
+	line-height: 120px;
+}
+
+h1 a{
+	color: brown;
+	text-decoration: none;
+}
+
+
+h2 h4 h5 h6{ 
+font-family: "Mona Sans", sans-serif, verdana;
+}
+h2{
+	font-weight: 600;
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+h4{
+	font-weight: 500;
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+h5{
+	font-weight: 300;
+	font-size: 75px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+h6{
+	font-weight: 700;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+P{ 
+	font-weight: 24;
+	font-size: 24px;
+	color: black;
+	text-decoration: none;
+	text-transform:  capitalize, uppercase, lowercase;
+}
+
+footer p{
+	font-weight: 24;
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+	text-transform:  capitalize, uppercase, lowercase;
+}
+
+
+nav ul{
+	list-style-type: none;
+	color: white;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-family: "Mona Sans", verdana, helvetica, san-serif;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding:5px;
+}
+
+nav ul li a:hover{
+color: brown;
+background-color: black;
+/* header ends */
+}  
+/* sub heading*/
+ h3 {
+background-color: black; 
+padding: 10px 20px; 
+display: inline-block;
+border-radius: 50px 50px 50px 50px;
+font-family: "Airframe BoldI", verdana, helvetica, san-serif;
+font-weight: 200;
+font-size: 65px;
+color: brown;
+text-decoration: none;
+text-transform: uppercase;
+}
+/* end*/
+ol {
+	color: white
+}
+dl {
+	color: white
+}
+
+nav ul li{
+	display: inline block;
+	padding:5px;
+}
+table {
+	color: white; 
+	empty-cells: show;
+}
+
+#logo{
+	width: 50px;
+	height: 50px;
+}
+
+img.reSizeImage{
+	width: 300px;
+	height: auto;
+}
+#homepagecontent{
+	width: 80%;
+	overflow: auto;
+	margin: 0px auto;
+}
+
+#tophpimages{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+/*homepage sectiom start*/
+.homepageImages{
+width: 50%;
+  text-align: center;
+  height: 300px;
+}
+
+
+
+#homepageImageOne{
+	background-image: url('Photos/Trees.jpg');
+}
+
+#homepageImageTwo{
+	background-image: url('Audio.jpg');
+}
+
+#homepageImageThree{
+	margin: 0px auto;
+	height: auto;
+	background-image: url('Photos/Video.jpg');
+
+}
+/* HP ends*/
+
+/* photo section */
+
+#photo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+}
+
+/* photo section ends*/
+
+
+/* form */
+form {
+color: brown;
+background-color: transparent;
+padding:10px;
+}
+
+form p{
+	color: brown;
+}
+
+.button{
+  background-color: brown;
+  padding: 10px 25px;
+  font-size: 22px;
+}
+/* end*/
+.imgsize{
+	width: 100;
+	height: auto;
+}
+#box{
+    border: 2px solid black;  
+    padding: 15px;           
+    background-color: white; 
+    width: 700px; 
+	height: 250px;           
+    margin: 30px auto;      
+    border-radius: 5px;      
+}
